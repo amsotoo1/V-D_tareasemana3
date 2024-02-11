@@ -1,4 +1,4 @@
-<iframe src="https://lookerstudio.google.com/embed/reporting/8a79764f-d20f-470e-a227-694b2726b813/page/RespD" width="1200" height="2000"></iframe>
+<iframe src="https://lookerstudio.google.com/embed/reporting/8a79764f-d20f-470e-a227-694b2726b813/page/RespD" width="800" height="400"></iframe>
 
 
 
