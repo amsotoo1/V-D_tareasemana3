@@ -1,5 +1,6 @@
 <iframe width="600" height="1000" src="https://lookerstudio.google.com/embed/reporting/8a79764f-d20f-470e-a227-694b2726b813/page/RespD" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
 
+
 **DOCUMENTACIÓN**
 Fuente: https://docs.google.com/spreadsheets/d/1IPS5dBSGtwYVbjsfbaMCYIWnOuRmJcbequohNxCyGVw/edit?resourcekey#gid=1625408792
 Teniendo en cuenta que la fuente de datos es un repositorio de información externa, se ha decidido realizar una copia dentro de los recursos de uno de los miembros del equipo, Ana María Soto Orozco. Por lo tanto, la nueva fuente de datos sería la siguiente: https://docs.google.com/spreadsheets/d/1wIp6Ssk66Yr-OFYD_uSueetlvKbWHrvXRBJYv4Zph7w/edit?usp=drive_link. Esta fuente, denominada "Estados_US", se encuentra en modo de visualización para aquellos que tengan el vínculo.
