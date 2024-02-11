@@ -1,10 +1,12 @@
 <iframe width="600" height="1000" src="https://lookerstudio.google.com/embed/reporting/8a79764f-d20f-470e-a227-694b2726b813/page/RespD" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
 
-# **DOCUMENTACIÓN**
-**Fuente:** https://docs.google.com/spreadsheets/d/1IPS5dBSGtwYVbjsfbaMCYIWnOuRmJcbequohNxCyGVw/edit?resourcekey#gid=1625408792
 
+# **DOCUMENTACIÓN**
+
+Fuente: https://docs.google.com/spreadsheets/d/1IPS5dBSGtwYVbjsfbaMCYIWnOuRmJcbequohNxCyGVw/edit?resourcekey#gid=1625408792968bb02bb6f493b099331d20f202ffd7ce4135e7
 Teniendo en cuenta que la fuente de datos es un repositorio de información externa, se ha decidido realizar una copia dentro de los recursos de uno de los miembros del equipo, Ana María Soto Orozco. Por lo tanto, la nueva fuente de datos sería la siguiente: https://docs.google.com/spreadsheets/d/1wIp6Ssk66Yr-OFYD_uSueetlvKbWHrvXRBJYv4Zph7w/edit?usp=drive_link. Esta fuente, denominada "Estados_US", se encuentra en modo de visualización para aquellos que tengan el vínculo.
 A continuación, se presenta la información de la base implementada por el equipo de trabajo para la investigación y diseño de los objetivos. Es importante destacar que esta base constituye el resultado final de la limpieza y estandarización de los campos. En la Tabla 1"Metadata de la tabla:Estados_US" se incluyen los nombres de las variables en la base de datos original, los nombres una vez modelados, la tipología y una breve descripción de cada variable.
+
 
 *Tabla 1"Metadata de la tabla:Estados_US"*
 | Nombre original en la base | Nombre nuevo                | Tipo de Variable | Descripción de variable                                                                           |
@@ -38,8 +40,10 @@ A continuación, se presenta la información de la base implementada por el equi
 1.	**Renombrar campos:** 
 Se procede a renombrar los campos provenientes del formulario con el objetivo de hacerlos más concisos y descriptivos. La Tabla 1 "Metadata de la tabla: Estados_US" contiene la homologación de los nombres.
 
+
 2.	**Limpieza y estandarización de los campos país y ciudad:**
 Durante la etapa inicial de limpieza, se emplea un proceso ETL para extraer caracteres especiales y identificar campos con longitud excesiva que no corresponden a ubicaciones válidas. Para aquellos campos con múltiples registros separados por diversos delimitadores, se opta por conservar únicamente el primer registro de ubicación, mientras que los campos vacíos o sin referencia a una ubicación específica se designan como 'Others'. Posteriormente, se procede a la estandarización mediante la creación de un catálogo de registros identificados, realizada manualmente con la colaboración del equipo para garantizar la presencia de registros de ubicación únicos y coherentes.
+
 
 3.	**Limpieza y estandarización del campo Sector económico:**
 El proceso de limpieza y estandarización del campo Sector Económico sigue un enfoque similar. Se inicia con la limpieza de caracteres especiales y la decisión de conservar únicamente el primer registro para aquellos campos con múltiples registros separados por diversos delimitadores. Los registros sin denominación clara se categorizan como "Others". Luego, se agrupan los valores similares o relacionados bajo categorías más amplias, resultando en 17 sectores económicos. Se conserva el campo original y el resultado de esta modelación se registra en un nuevo campo denominado "Sector Económico Limpio".
@@ -47,10 +51,12 @@ El proceso de limpieza y estandarización del campo Sector Económico sigue un e
 4.	**Limpieza y estandarización del campo Moneda:**
 Se procede con la limpieza y estandarización del campo Moneda, el cual contiene información detallada sobre la moneda utilizada para los ingresos del usuario. Se eliminan caracteres especiales y se conserva una única moneda, prevaleciendo el primer registro. Los registros sin clasificación se categorizan según su ubicación.
 
+
 5.	**Creación del campo Saldos anual, compensación anual y saldo completo:**
 Se crea el campo "Saldos Anual", "Compensación Anual" y "Saldo Completo". Se inicia con la limpieza y transformación de los campos de saldos anual y compensación anual. Se realiza un análisis de los valores con longitud de 1 o 2, y se ajustan según la medida esperada, considerando, por ejemplo, expresiones como "80K" para indicar un salario anual de 80,000. Los registros sin valor se categorizan como 0, considerando su referencia a una moneda.
 Posteriormente, se procede a generar las nuevas columnas "Salario Anual COP" y "Compensaciones COP", convirtiendo los salarios y compensaciones a pesos colombianos utilizando las tasas de cambio proporcionadas en la Tabla 2 "Catálogo de Tasas de Conversión para COP". Cabe destacar que estas tasas de cambio fueron extraídas el día 07/02/2024.
 Finalmente, se calcula la suma total del campo "Salario Anual" y "Compensación Anual" en pesos colombianos, lo que da lugar al salario completo.
+
 
 *Tabla 2"Catalogo de Tasas de conversión para COP"*
 | Moneda | Tasa de conversión a COP |
@@ -79,6 +85,7 @@ Finalmente, se calcula la suma total del campo "Salario Anual" y "Compensación 
 | NOK    | 373,95                   |
 | TTD    | 583,04                   |
 | MXN    | 231,96                  
+
 
 6.	**Estandarización del campo Genero:**
 Los registros no clasificados se catalogan como “Other or prefer not to answer”.
