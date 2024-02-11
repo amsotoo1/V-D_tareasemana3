@@ -1,7 +1,8 @@
 <iframe width="600" height="1000" src="https://lookerstudio.google.com/embed/reporting/8a79764f-d20f-470e-a227-694b2726b813/page/RespD" frameborder="0" style="border:0" allowfullscreen sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
 
-**DOCUMENTACIÓN**
-Fuente: https://docs.google.com/spreadsheets/d/1IPS5dBSGtwYVbjsfbaMCYIWnOuRmJcbequohNxCyGVw/edit?resourcekey#gid=1625408792
+# **DOCUMENTACIÓN**
+**Fuente:** https://docs.google.com/spreadsheets/d/1IPS5dBSGtwYVbjsfbaMCYIWnOuRmJcbequohNxCyGVw/edit?resourcekey#gid=1625408792
+
 Teniendo en cuenta que la fuente de datos es un repositorio de información externa, se ha decidido realizar una copia dentro de los recursos de uno de los miembros del equipo, Ana María Soto Orozco. Por lo tanto, la nueva fuente de datos sería la siguiente: https://docs.google.com/spreadsheets/d/1wIp6Ssk66Yr-OFYD_uSueetlvKbWHrvXRBJYv4Zph7w/edit?usp=drive_link. Esta fuente, denominada "Estados_US", se encuentra en modo de visualización para aquellos que tengan el vínculo.
 A continuación, se presenta la información de la base implementada por el equipo de trabajo para la investigación y diseño de los objetivos. Es importante destacar que esta base constituye el resultado final de la limpieza y estandarización de los campos. En la Tabla 1"Metadata de la tabla:Estados_US" se incluyen los nombres de las variables en la base de datos original, los nombres una vez modelados, la tipología y una breve descripción de cada variable.
 
@@ -33,7 +34,7 @@ A continuación, se presenta la información de la base implementada por el equi
 | NA                          | Sector_Economico_Limpio      | string           | Este campo es el resultado de limpiar y homologar el campo Sector_Economico, sera el campo final de la base |
 
 
-**PASO A PASO DEL MODALO DE LA INFORMACION**
+# **PASO A PASO DEL MODALO DE LA INFORMACION**
 1.	**Renombrar campos:** 
 Se procede a renombrar los campos provenientes del formulario con el objetivo de hacerlos más concisos y descriptivos. La Tabla 1 "Metadata de la tabla: Estados_US" contiene la homologación de los nombres.
 
