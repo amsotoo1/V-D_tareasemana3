@@ -38,7 +38,7 @@ A continuación, se presenta la información de la base implementada por el equi
 | NA                          | Sector_Economico_Limpio      | string           | Este campo es el resultado de limpiar y homologar el campo Sector_Economico, sera el campo final de la base |
 
 
-# **PASO A PASO DEL MODALO DE LA INFORMACION**
+# **PASO A PASO DEL MODELADO DE LA INFORMACION**
 1.	**Renombrar campos:** 
 Se procede a renombrar los campos provenientes del formulario con el objetivo de hacerlos más concisos y descriptivos. La Tabla 1 "Metadata de la tabla: Estados_US" contiene la homologación de los nombres.
 
