@@ -1,6 +1,7 @@
 <iframe src="https://lookerstudio.google.com/embed/reporting/8a79764f-d20f-470e-a227-694b2726b813/page/RespD" width="600" height="400"></iframe>
 
 
+
 Si tienes problemas con la visualizacion del tablero, haz clic en el siguiente enlace: [Tablero de Looker](https://lookerstudio.google.com/embed/reporting/8a79764f-d20f-470e-a227-694b2726b813/page/RespD)
 # **DOCUMENTACIÓN**
 
